@@ -12,5 +12,11 @@ public class DadosPrimitivos {
         char inicial = 'N';
         boolean vivoOuMorto = true;
         Long saldoBancario = 999999L;
+
+        System.out.println(idade); //Comando para mostrar para o usuário
+        System.out.println(saldoBancario);
+        System.out.println(altura);
+        System.out.println("Saldo Bancario = " + saldoBancario);
+        System.out.println("Minha idade é: " + idade);
     }
 }
