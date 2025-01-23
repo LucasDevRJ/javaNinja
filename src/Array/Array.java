@@ -34,6 +34,25 @@ public class Array {
         double[] flutuante = new double[1];
         System.out.println(flutuante[0]);
 
+        //Redeclarando Array
+        ninjas = new String[7];
+        System.out.println(ninjas[0]); //será null, pois o espaço em memória foi reescrito
+        //Essa deleção acontece por causa do Garbage Collecttor
+        //Que é uma lógica que exclui os espaços em memória que não estão sendo usados
+        //Como no caso da referência anterior a ninjas
+
+        ninjas[0] = "Hashirama Senju";
+        ninjas[1] = "Tobirama Senju";
+        ninjas[2] = "Hiruzen Sarutobi";
+        ninjas[3] = "Minato Namikase";
+        ninjas[4] = "Tsunade";
+        ninjas[5] = "Kakashi Hatake";
+        ninjas[6] = "Naruto Uzumaki";
+
+        for (int i = 0; i < ninjas.length; i++) {
+            System.out.println(ninjas[i]);
+        }
+
 //        String ninja1 = "Naruto Uzumaki";
 //        String ninja2 = "Sasuke Uchiha";
 //        String ninja3 = "Sakura Haruno";
