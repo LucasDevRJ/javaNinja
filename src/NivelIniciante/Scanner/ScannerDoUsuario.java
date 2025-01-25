@@ -1,15 +1,15 @@
-package Scanner;
+package NivelIniciante.Scanner;
 
 import java.util.Scanner;
 
 public class ScannerDoUsuario {
     public static void main(String[] args) {
         /*
-            Scanner = É um jeito do usuário trazer o usuário para dentro da aplicação.
+            NivelIniciante.TiposDeDados.Scanner = É um jeito do usuário trazer o usuário para dentro da aplicação.
             Objetivo: O usuário vai criar um ninja e vamos validar os dados
         */
 
-        //Abrir o Scanner
+        //Abrir o NivelIniciante.TiposDeDados.Scanner
         Scanner caixaDeTexto = new Scanner(System.in);
 
         //Receber o nome do ninja
@@ -29,7 +29,7 @@ public class ScannerDoUsuario {
             System.out.printf("\n%s é muito novo ainda, precisa treinar mais antes de sair da vila.", nomeDoNinja);
         }
 
-        //Fechar o Scanner
+        //Fechar o NivelIniciante.TiposDeDados.Scanner
         caixaDeTexto.close();
     }
 }

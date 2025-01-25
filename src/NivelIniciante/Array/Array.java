@@ -1,4 +1,4 @@
-package Array;
+package NivelIniciante.Array;
 
 public class Array {
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Array {
         double[] flutuante = new double[1];
         System.out.println(flutuante[0]);
 
-        //Redeclarando Array
+        //Redeclarando NivelIniciante.TiposDeDados.Array
         ninjas = new String[7];
         System.out.println(ninjas[0]); //será null, pois o espaço em memória foi reescrito
         //Essa deleção acontece por causa do Garbage Collecttor
