@@ -5,15 +5,6 @@ public class Ninja {
     String aldeia;
     int idade;
 
-    //Criar um método público personalizado
-
-    /*
-     * O método Void não retorna valor
-     **/
-    public void SharinganAtivado() {
-        System.out.println("O Sharingan Ativou!");
-    }
-
     /*
         Método String tem que retornar uma String
      */
