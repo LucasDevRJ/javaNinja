@@ -49,5 +49,20 @@ public class Main {
         Sakura.habilidadeEspecial();
         Naruto.habilidadeEspecial();
         Sasuke.habilidadeEspecial();
+
+        Hokage hokage = new Hokage();
+        hokage.nome = "Hashirama";
+
+        //Usando Construtor
+        Hokage kokage2 = new Hokage("Tobirama Senju");
+        System.out.println(kokage2.nome);
+
+        Hokage hokage3 = new Hokage(70);
+        System.out.println("A idade do terceiro Hokage é " + hokage3.idade + " anos.");
+
+        Hokage hokage4 = new Hokage("Minato Namikaze", 30, false);
+        System.out.println(hokage4.nome);
+        System.out.println(hokage4.idade);
+        System.out.println(hokage4.vivo);
     }
 }
