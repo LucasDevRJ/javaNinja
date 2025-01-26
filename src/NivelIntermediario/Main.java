@@ -36,5 +36,18 @@ public class Main {
         Hinata.aldeia = "Aldeia da Folha";
         Hinata.idade = 16;
         Hinata.ativarByakugan();
+
+        Boruto boruto = new Boruto();
+        boruto.nome = "Boruto Hyuuga Uzumaki";
+        boruto.idade = 16;
+        boruto.aldeia = "Konoha";
+        boruto.ativarKarma();
+        boruto.ativarJougan();
+        boruto.anosParaSeTornarHokage(25);
+        System.out.println(boruto.EuSouUmNinja());
+
+        Sakura.habilidadeEspecial();
+        Naruto.habilidadeEspecial();
+        Sasuke.habilidadeEspecial();
     }
 }
