@@ -1,6 +1,6 @@
 package NivelIntermediario;
 
-public class Hokage {
+public abstract class Hokage {
     String nome;
     int idade;
     boolean vivo;
@@ -28,6 +28,12 @@ public class Hokage {
         this.missoes = missoes;
         this.saldoBancario = saldoBancario;
         this.altura = altura;
+    }
+
+    public abstract void sabedoria();
+
+    public String fraseDeHokage() {
+        return "Sou " + this.nome + "! Um Hokage!!";
     }
 
     public Hokage(String nome) {
