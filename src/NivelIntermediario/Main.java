@@ -90,5 +90,11 @@ public class Main {
         Akimichi akimichi = new Akimichi();
         akimichi.jogarShuriken();
 
+        Uchiha uchiha = new Uchiha("Uchiha Itachi", "Konoha", 23);
+        uchiha.saudacao();
+        uchiha.SharinganAtivado();
+        uchiha.habilidadeEspecial();
+        int quantidadeDeAnosQueFaltaParaVirarHokage = uchiha.anosParaSeTornarHokage(40);
+        System.out.println("Faltam " + quantidadeDeAnosQueFaltaParaVirarHokage + " anos para o " + uchiha.nome + " vira Hokage.");
     }
 }

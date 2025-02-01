@@ -3,10 +3,21 @@ package NivelIntermediario;
 //Classe Abstrata permite métodos abstratos, os quais obrigarão as classes herdeiras implementarem-os de sua forma
 //Não é possível a instância, somente dos filhos
 //Boa para manutenção do código
+//Essa é uma super classe, pois dá origem a outras classes
 public abstract class Ninja implements EstrategiaDeBatalha {
     String nome;
     String aldeia;
     int idade;
+
+    public Ninja() {
+
+    }
+
+    public Ninja(String nome, String aldeia, int idade) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.idade = idade;
+    }
 
     public abstract void saudacao();
     /*
