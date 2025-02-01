@@ -7,18 +7,21 @@ public class Main {
         Naruto.nome = "Naruto Uzumaki";
         Naruto.aldeia = "Vila da Folha";
         Naruto.idade = 17;
+        Naruto.saudacao();
         Naruto.ModoSabioAtivado();
+        Naruto.atirarKunai();
 
         //Criar ninja Sasuke Uchiha - Sasuke é um Objeto
         Uchiha Sasuke = new Uchiha();
         Sasuke.nome = "Sasuke Uchiha";
         Sasuke.aldeia = "Vila da Folha";
         Sasuke.idade = 18;
+        Sasuke.saudacao();
 
         //Aplicando métodos aos meus Objetos
         Sasuke.SharinganAtivado();
-        String chamandoMetodo = Sasuke.EuSouUmNinja();
-        System.out.println(chamandoMetodo);
+//        String chamandoMetodo = Sasuke.EuSouUmNinja();
+//        System.out.println(chamandoMetodo);
 
         int anosQueFaltamParaSeTornarHokage = Sasuke.anosParaSeTornarHokage(30);
         System.out.printf("\nO %s tem %d anos de idade, então faltam %d anos para se tornar Hokage.\n", Sasuke.nome, Sasuke.idade,anosQueFaltamParaSeTornarHokage);
@@ -28,7 +31,9 @@ public class Main {
         Sakura.nome = "Sakura Haruno";
         Sakura.aldeia = "Vila da Folha";
         Sakura.idade = 18;
+        Sakura.saudacao();
         Sakura.AtivarCura();
+        Sakura.atirarKunai();
 
         //Objeto 4
         Hyuuga Hinata = new Hyuuga();
@@ -44,7 +49,7 @@ public class Main {
         boruto.ativarKarma();
         boruto.ativarJougan();
         boruto.anosParaSeTornarHokage(25);
-        System.out.println(boruto.EuSouUmNinja());
+//        System.out.println(boruto.EuSouUmNinja());
 
         Sakura.habilidadeEspecial();
         Naruto.habilidadeEspecial();
@@ -73,5 +78,15 @@ public class Main {
 //        System.out.println(hokage4.nome);
 //        System.out.println(hokage4.idade);
 //        System.out.println(hokage4.vivo);
+
+        Uzumaki ninja = new Uzumaki();
+        ninja.nome = "Boruto Uzumaki";
+        ninja.aldeia = "Konoha";
+        ninja.idade = 12;
+        ninja.habilidadeEspecial();
+
+        Akimichi akimichi = new Akimichi();
+        akimichi.jogarShuriken();
+
     }
 }
