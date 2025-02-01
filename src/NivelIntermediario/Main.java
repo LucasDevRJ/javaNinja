@@ -67,6 +67,7 @@ public class Main {
         String frase = hokage.fraseDeHokage();
         System.out.println(frase);
 
+        //Não dá para criar instâncias de uma Classe Abstrata!
         //Usando Construtor
 //        Hokage kokage2 = new Hokage("Tobirama Senju");
 //        System.out.println(kokage2.nome);
@@ -84,6 +85,7 @@ public class Main {
         ninja.aldeia = "Konoha";
         ninja.idade = 12;
         ninja.habilidadeEspecial();
+        ninja.estrategiaDeBatalhaNinja();
 
         Akimichi akimichi = new Akimichi();
         akimichi.jogarShuriken();
