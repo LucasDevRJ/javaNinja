@@ -44,4 +44,13 @@ public class Uchiha extends Ninja implements SharinganInterface {
             System.out.println("Seu QI é " + qi + ", então você precisa treinar mais suas estratégias!");
         }
     }
+
+    @Override
+    //@Override não é algo obrigatório ao reescrever um método
+    //Mas os programador a utilizam pois é uma padronização do Java
+    //E previne que haja erros de digitação ao chamar o método sobrescrito
+    public void metodoProvisorio() {
+        System.out.println("Teste, na classe Uchiha");
+    }
+
 }

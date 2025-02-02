@@ -116,5 +116,15 @@ public class Main {
         uchiha1.exibeQuantidadeDeMissoesFinalizadas();
         uchiha1.inteligenciaDeCombate();
         uchiha1.inteligenciaDeCombate(160);
+        uchiha1.metodoProvisorio();
+
+        System.out.println("---------- Kushina Uzumaki ----------");
+        Uzumaki uzumaki1 = new Uzumaki("Kushina Uzumaki", "Konoha", 30, 40, NivelDoNinja.CHUUNIN);
+        //System.out.println(uzumaki1.nome); //A referência uzumaki1 é uma referência ao espaço alocado na memória, que guarda esse Objeto
+        System.out.println(uzumaki1); //O @ seguido de vários valores é o valor referência do espaço armazenado na memória para o Objeto
+
+        System.out.println("---------- Shisui Uchiha ----------");
+        Uchiha uchiha2 = new Uchiha("Shisui Uchiha", "Konoha", 17, 120, NivelDoNinja.JOUNIN);
+        System.out.println(uchiha2.toString()); //mesmo que colocar somente o uchiha2
     }
 }
