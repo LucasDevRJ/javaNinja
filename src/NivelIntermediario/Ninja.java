@@ -9,6 +9,10 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     String aldeia;
     int idade;
 
+    //TODO: incluir dois novos atributos, número de missões concluídas e o rank
+    int numeroDeMissoesConcluidas;
+    NivelDoNinja rank;
+
     public Ninja() {
 
     }
@@ -17,6 +21,14 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         this.nome = nome;
         this.aldeia = aldeia;
         this.idade = idade;
+    }
+
+    //TODO: sobrecarga do construtor, chamada dos novos atributos
+    //Não é preciso redeclaras os atributos anteriores dentro no novo construtor
+    public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelDoNinja rank) {
+        this(nome, aldeia, idade);
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+        this.rank = rank;
     }
 
     public abstract void saudacao();
@@ -36,9 +48,33 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         System.out.println("Jogando kunai!!");
     }
 
+    void exibeRank() {
+        System.out.println("Meu nome é " + this.nome + " e sou um " + this.rank);
+    }
+
+    void exibeQuantidadeDeMissoesFinalizadas() {
+        System.out.println("Eu, " + this.nome + " já finalizei " + this.numeroDeMissoesConcluidas + " missões.");
+    }
+
     //Sobreescrevendo o método da interface
     @Override
     public void estrategiaDeBatalhaNinja() {
         System.out.println("Meu nome é " + nome + " e essa é minha estratégia de combate ninja.");
+    }
+
+    //inteligência de combate, método padrão que vem da interface EstrategiaDeBatalha
+    public void inteligenciaDeCombate() {
+        System.out.println("Meu nome é " + nome + " e essa é minha inteligência de combate ninja.");
+    }
+
+    //Sobrecarga do método inteligenciaDeCombate
+    public void inteligenciaDeCombate(int qi) {
+        if (qi > 150) {
+            System.out.println("Seu QI é " + qi + ", então você é um gênio!");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é " + qi + ", então você é um promissor!");
+        } else {
+            System.out.println("Seu QI é " + qi + ", então você precisa treinar mais suas estratégias!");
+        }
     }
 }

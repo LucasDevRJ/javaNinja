@@ -2,6 +2,13 @@ package NivelIntermediario;
 
 public class Uzumaki extends Ninja {
 
+    public Uzumaki() {
+    }
+
+    public Uzumaki(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelDoNinja rank) {
+        super(nome, aldeia, idade, numeroDeMissoesConcluidas, rank);
+    }
+
     public void ModoSabioAtivado() {
         System.out.println("Eu sou o " + nome + " no Modo Sábio!");
     }

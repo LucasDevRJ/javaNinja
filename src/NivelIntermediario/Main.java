@@ -3,13 +3,21 @@ package NivelIntermediario;
 public class Main {
     public static void main(String[] args) {
         //Criar o ninja Naruto - Naruto é um Objeto
-        Uzumaki Naruto = new Uzumaki();
-        Naruto.nome = "Naruto Uzumaki";
-        Naruto.aldeia = "Vila da Folha";
-        Naruto.idade = 17;
-        Naruto.saudacao();
-        Naruto.ModoSabioAtivado();
-        Naruto.atirarKunai();
+//        Uzumaki Naruto = new Uzumaki();
+//        Naruto.nome = "Naruto Uzumaki";
+//        Naruto.aldeia = "Vila da Folha";
+//        Naruto.idade = 17;
+//        Naruto.rank = NivelDoNinja.GENIN;
+//        Naruto.saudacao();
+//        Naruto.ModoSabioAtivado();
+//        Naruto.atirarKunai();
+        Uzumaki uzumaki = new Uzumaki("Naruto Uzumaki", "Konoha", 16, 30, NivelDoNinja.GENIN);
+        uzumaki.saudacao();
+        uzumaki.estrategiaDeBatalhaNinja();
+        uzumaki.habilidadeEspecial();
+        uzumaki.ModoSabioAtivado();
+        uzumaki.exibeQuantidadeDeMissoesFinalizadas();
+        uzumaki.exibeRank();
 
         //Criar ninja Sasuke Uchiha - Sasuke é um Objeto
         Uchiha Sasuke = new Uchiha();
@@ -52,7 +60,7 @@ public class Main {
 //        System.out.println(boruto.EuSouUmNinja());
 
         Sakura.habilidadeEspecial();
-        Naruto.habilidadeEspecial();
+//        Naruto.habilidadeEspecial();
         Sasuke.habilidadeEspecial();
 
         Senju hokage = new Senju();
@@ -96,5 +104,17 @@ public class Main {
         uchiha.habilidadeEspecial();
         int quantidadeDeAnosQueFaltaParaVirarHokage = uchiha.anosParaSeTornarHokage(40);
         System.out.println("Faltam " + quantidadeDeAnosQueFaltaParaVirarHokage + " anos para o " + uchiha.nome + " vira Hokage.");
+
+        Hatake hatake = new Hatake("Kakashi Hatake", "Konoha", 25);
+        hatake.saudacao();
+        hatake.SharinganAtivado();
+        hatake.ninjaDeElite();
+        hatake.seTornarHokage();
+
+        Uchiha uchiha1 = new Uchiha("Uchiha Obito", "Konoha", 13, 20, NivelDoNinja.GENIN);
+        uchiha1.exibeRank();
+        uchiha1.exibeQuantidadeDeMissoesFinalizadas();
+        uchiha1.inteligenciaDeCombate();
+        uchiha1.inteligenciaDeCombate(160);
     }
 }
