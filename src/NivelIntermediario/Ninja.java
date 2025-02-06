@@ -12,9 +12,16 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     //TODO: incluir dois novos atributos, número de missões concluídas e o rank
     int numeroDeMissoesConcluidas;
     NivelDoNinja rank;
+//    final double altura = 1.74; //se for final não poderá atribuir outros valores nos Objetos criados
 
     public Ninja() {
 
+    }
+
+    //TODO NINJA VAI FAZER OBRIGATORIAMENTE
+    //final = determina que o método não pode ser sobrescrito
+    final void atirarKunai() {
+        System.out.println("Jogando kunai!!");
     }
 
     public Ninja(String nome, String aldeia, int idade) {
@@ -44,9 +51,6 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         System.out.println("Meu nome é " + nome + " e esse é meu ataque especial");
     }
 
-    public void atirarKunai() {
-        System.out.println("Jogando kunai!!");
-    }
 
     void exibeRank() {
         System.out.println("Meu nome é " + this.nome + " e sou um " + this.rank);

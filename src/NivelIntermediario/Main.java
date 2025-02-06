@@ -24,6 +24,8 @@ public class Main {
         Sasuke.nome = "Sasuke Uchiha";
         Sasuke.aldeia = "Vila da Folha";
         Sasuke.idade = 18;
+//        Sasuke.altura = 1.70;
+//        System.out.println(Sasuke.altura);
         Sasuke.saudacao();
 
         //Aplicando métodos aos meus Objetos
@@ -126,5 +128,10 @@ public class Main {
         System.out.println("---------- Shisui Uchiha ----------");
         Uchiha uchiha2 = new Uchiha("Shisui Uchiha", "Konoha", 17, 120, NivelDoNinja.JOUNIN);
         System.out.println(uchiha2.toString()); //mesmo que colocar somente o uchiha2
+
+        System.out.println();
+        System.out.println("---------|Testando método da classe mãe com final|---------");
+        uzumaki.atirarKunai();
+
     }
 }

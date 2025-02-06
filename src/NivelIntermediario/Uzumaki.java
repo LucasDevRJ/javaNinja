@@ -22,4 +22,11 @@ public class Uzumaki extends Ninja {
     public void habilidadeEspecial() {
         System.out.println("Meu nome é " + nome + " e esse é meu ataque Uzumaki, um ataque de ar");
     }
+
+    //não pode ser sobrescrito
+//    @Override
+//    public void atirarKunai() {
+//        System.out.println("Jogando kunai como um Uzumaki!!");
+//    }
+
 }
