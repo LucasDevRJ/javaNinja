@@ -25,6 +25,9 @@ public class Uchiha extends Ninja implements SharinganInterface {
         System.out.println("Meu nome é " + getNome() + " e esse é meu ataque Uchiha, um ataque de fogo");
     }
 
+    /*
+        Implementado pela Interface SharinganInterface
+     */
     @Override
     public void SharinganAtivado() {
         System.out.println("Meu nome é " + getNome() + ". O Sharingan Ativou, eu sou um Uchiha!");

@@ -11,6 +11,7 @@ public class Main {
 //        Naruto.saudacao();
 //        Naruto.ModoSabioAtivado();
 //        Naruto.atirarKunai();
+        System.out.println("--------------------|NARUTO UZUMAKI|--------------------");
         Uzumaki uzumaki = new Uzumaki("Naruto Uzumaki", "Konoha", 16, 30, NivelDoNinja.GENIN);
         uzumaki.saudacao();
         uzumaki.estrategiaDeBatalhaNinja();
@@ -18,8 +19,10 @@ public class Main {
         uzumaki.ModoSabioAtivado();
         uzumaki.exibeQuantidadeDeMissoesFinalizadas();
         uzumaki.exibeRank();
+        System.out.println("--------------------------------------------------------");
 
         //Criar ninja Sasuke Uchiha - Sasuke é um Objeto
+        System.out.println("--------------------|SASUKE UCHIHA|--------------------");
         Uchiha Sasuke = new Uchiha();
 //        Sasuke.nome = "Sasuke Uchiha";
 //        Sasuke.aldeia = "Vila da Folha";
@@ -30,6 +33,10 @@ public class Main {
         Sasuke.setAldeia("Vila da Folha");
         Sasuke.setIdade(18);
         Sasuke.saudacao();
+        Sasuke.habilidadeEspecial();
+
+        System.out.println("--------------------------------------------------------");
+
 
         //Aplicando métodos aos meus Objetos
         Sasuke.SharinganAtivado();
@@ -39,6 +46,7 @@ public class Main {
         int anosQueFaltamParaSeTornarHokage = Sasuke.anosParaSeTornarHokage(30);
         System.out.printf("\nO %s tem %d anos de idade, então faltam %d anos para se tornar Hokage.\n", Sasuke.getNome(), Sasuke.getIdade(),anosQueFaltamParaSeTornarHokage);
 
+        System.out.println("--------------------|SAKURA HARUNO|--------------------");
         //Criar Sakura Haruno
         Haruno Sakura = new Haruno();
 //        Sakura.nome = "Sakura Haruno";
@@ -50,8 +58,12 @@ public class Main {
         Sakura.saudacao();
         Sakura.AtivarCura();
         Sakura.atirarKunai();
+        Sakura.habilidadeEspecial();
+
+        System.out.println("--------------------------------------------------------");
 
         //Objeto 4
+        System.out.println("--------------------|HINATA HYUUGA|--------------------");
         Hyuuga Hinata = new Hyuuga();
 //        Hinata.nome = "Hinata Hyuuga ";
 //        Hinata.aldeia = "Aldeia da Folha";
@@ -60,7 +72,10 @@ public class Main {
         Hinata.setAldeia("Aldeia da Folha");
         Hinata.setIdade(16);
         Hinata.ativarByakugan();
+        System.out.println("--------------------------------------------------------");
 
+
+        System.out.println("--------------------|BORUTO UZUMAKI|--------------------");
         Boruto boruto = new Boruto();
 //        boruto.nome = "Boruto Hyuuga Uzumaki";
 //        boruto.idade = 16;
@@ -71,12 +86,13 @@ public class Main {
         boruto.ativarKarma();
         boruto.ativarJougan();
         boruto.anosParaSeTornarHokage(25);
+        System.out.println("--------------------------------------------------------");
+
 //        System.out.println(boruto.EuSouUmNinja());
 
-        Sakura.habilidadeEspecial();
 //        Naruto.habilidadeEspecial();
-        Sasuke.habilidadeEspecial();
 
+        System.out.println("--------------------|HASHIRAMA SENJU|--------------------");
         Senju hokage = new Senju();
         hokage.nome = "Hashirama";
         hokage.aldeia = "Konoha";
@@ -88,6 +104,7 @@ public class Main {
 
         String frase = hokage.fraseDeHokage();
         System.out.println(frase);
+        System.out.println("--------------------------------------------------------");
 
         //Não dá para criar instâncias de uma Classe Abstrata!
         //Usando Construtor
@@ -102,43 +119,52 @@ public class Main {
 //        System.out.println(hokage4.idade);
 //        System.out.println(hokage4.vivo);
 
-        Uzumaki ninja = new Uzumaki();
-//        ninja.nome = "Boruto Uzumaki";
-//        ninja.aldeia = "Konoha";
-//        ninja.idade = 12;
-        ninja.setNome("Boruto Uzumaki");
-        ninja.setAldeia("Konoha");
-        ninja.setIdade(12);
-        ninja.habilidadeEspecial();
-        ninja.estrategiaDeBatalhaNinja();
+//        Uzumaki ninja = new Uzumaki();
+////        ninja.nome = "Boruto Uzumaki";
+////        ninja.aldeia = "Konoha";
+////        ninja.idade = 12;
+//        ninja.setNome("Boruto Uzumaki");
+//        ninja.setAldeia("Konoha");
+//        ninja.setIdade(12);
+//        ninja.habilidadeEspecial();
+//        ninja.estrategiaDeBatalhaNinja();
 
+        System.out.println("--------------------|AKIMITCHI CHOOJI|--------------------");
         Akimichi akimichi = new Akimichi();
         akimichi.jogarShuriken();
+        System.out.println("--------------------------------------------------------");
 
+        System.out.println("--------------------|ITACHI UCHIHA|--------------------");
         Uchiha uchiha = new Uchiha("Uchiha Itachi", "Konoha", 23);
         uchiha.saudacao();
         uchiha.SharinganAtivado();
         uchiha.habilidadeEspecial();
         int quantidadeDeAnosQueFaltaParaVirarHokage = uchiha.anosParaSeTornarHokage(40);
         System.out.println("Faltam " + quantidadeDeAnosQueFaltaParaVirarHokage + " anos para o " + uchiha.getNome() + " vira Hokage.");
+        System.out.println("--------------------------------------------------------");
 
+        System.out.println("--------------------|KAKASHI HATAKE|--------------------");
         Hatake hatake = new Hatake("Kakashi Hatake", "Konoha", 25);
         hatake.saudacao();
         hatake.SharinganAtivado();
         hatake.ninjaDeElite();
         hatake.seTornarHokage();
+        System.out.println("--------------------------------------------------------");
 
+        System.out.println("--------------------|UCHIHA OBITO|--------------------");
         Uchiha uchiha1 = new Uchiha("Uchiha Obito", "Konoha", 13, 20, NivelDoNinja.GENIN);
         uchiha1.exibeRank();
         uchiha1.exibeQuantidadeDeMissoesFinalizadas();
         uchiha1.inteligenciaDeCombate();
         uchiha1.inteligenciaDeCombate(160);
         uchiha1.metodoProvisorio();
+        System.out.println("--------------------------------------------------------");
 
         System.out.println("---------- Kushina Uzumaki ----------");
         Uzumaki uzumaki1 = new Uzumaki("Kushina Uzumaki", "Konoha", 30, 40, NivelDoNinja.CHUUNIN);
         //System.out.println(uzumaki1.nome); //A referência uzumaki1 é uma referência ao espaço alocado na memória, que guarda esse Objeto
         System.out.println(uzumaki1); //O @ seguido de vários valores é o valor referência do espaço armazenado na memória para o Objeto
+        System.out.println("--------------------------------------------------------");
 
         System.out.println("---------- Shisui Uchiha ----------");
         Uchiha uchiha2 = new Uchiha("Shisui Uchiha", "Konoha", 17, 120, NivelDoNinja.JOUNIN);
@@ -154,6 +180,7 @@ public class Main {
         anbu.saudacaoAnbu();
         System.out.println();
 
+        System.out.println("--------------------|MISSÃO|--------------------");
         Missoes missao = new Missoes("Defender Konoha da vilã do Som", RankDeMissoes.S);
         missao.exibirDetalhes();
 
@@ -161,5 +188,14 @@ public class Main {
         Missoes missao2 = new Missoes("Ajudar senhora a cortar a grama", RankDeMissoes.D);
         missao2.exibirDetalhes();
 
+        System.out.println("--------------------|BIJUU|--------------------");
+        System.out.println(Bijuus.GYUUKI);
+        System.out.println();
+        System.out.println(Bijuus.ISOBU);
+
+        System.out.println();
+        System.out.println("--------------------|Naruto Final Classe|--------------------");
+        Naruto naruto = new Naruto();
+        naruto.apresentacao();
     }
 }
