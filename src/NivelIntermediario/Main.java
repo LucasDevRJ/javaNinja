@@ -133,5 +133,10 @@ public class Main {
         System.out.println("---------|Testando método da classe mãe com final|---------");
         uzumaki.atirarKunai();
 
+        System.out.println();
+        System.out.println("---------|Testando Classe Final|---------");
+        Anbu anbu = new Anbu("Sai");
+        anbu.saudacaoAnbu();
+
     }
 }
