@@ -137,6 +137,14 @@ public class Main {
         System.out.println("---------|Testando Classe Final|---------");
         Anbu anbu = new Anbu("Sai");
         anbu.saudacaoAnbu();
+        System.out.println();
+
+        Missoes missao = new Missoes("Defender Konoha da vilã do Som", RankDeMissoes.S);
+        missao.exibirDetalhes();
+
+        System.out.println();
+        Missoes missao2 = new Missoes("Ajudar senhora a cortar a grama", RankDeMissoes.D);
+        missao2.exibirDetalhes();
 
     }
 }
