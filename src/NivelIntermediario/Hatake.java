@@ -14,7 +14,7 @@ public class Hatake extends Ninja implements SharinganInterface, AnbuInterface, 
     }
     @Override
     public void saudacao() {
-        System.out.println("Eu sou " + super.nome + " e pertenço ao clã Hatake.");
+        System.out.println("Eu sou " + getNome() + " e pertenço ao clã Hatake.");
     }
 
     @Override
@@ -24,11 +24,11 @@ public class Hatake extends Ninja implements SharinganInterface, AnbuInterface, 
 
     @Override
     public void ninjaDeElite() {
-        System.out.println("Eu, " + super.nome + " sou um ninja de elite da ANBU.");
+        System.out.println("Eu, " + getNome() + " sou um ninja de elite da ANBU.");
     }
 
     @Override
     public void seTornarHokage() {
-        System.out.println("Eu, " + super.nome + ", sou o Sexto Hokage!");
+        System.out.println("Eu, " + getNome() + ", sou o Sexto Hokage!");
     }
 }

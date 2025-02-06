@@ -10,11 +10,11 @@ public class Haruno extends Ninja {
     }
 
     public void AtivarCura() {
-        System.out.println("Meu nome é " + nome + " e estou curando.");
+        System.out.println("Meu nome é " + getNome() + " e estou curando.");
     }
 
     @Override
     public void saudacao() {
-        System.out.println("Olá, tudo bem? Eu sou o " + nome + " e pertenço ao clã Haruno.");
+        System.out.println("Olá, tudo bem? Eu sou o " + getNome() + " e pertenço ao clã Haruno.");
     }
 }

@@ -21,11 +21,14 @@ public class Main {
 
         //Criar ninja Sasuke Uchiha - Sasuke é um Objeto
         Uchiha Sasuke = new Uchiha();
-        Sasuke.nome = "Sasuke Uchiha";
-        Sasuke.aldeia = "Vila da Folha";
-        Sasuke.idade = 18;
+//        Sasuke.nome = "Sasuke Uchiha";
+//        Sasuke.aldeia = "Vila da Folha";
+//        Sasuke.idade = 18;
 //        Sasuke.altura = 1.70;
 //        System.out.println(Sasuke.altura);
+        Sasuke.setNome("Sasuke Uchiha");
+        Sasuke.setAldeia("Vila da Folha");
+        Sasuke.setIdade(18);
         Sasuke.saudacao();
 
         //Aplicando métodos aos meus Objetos
@@ -34,28 +37,37 @@ public class Main {
 //        System.out.println(chamandoMetodo);
 
         int anosQueFaltamParaSeTornarHokage = Sasuke.anosParaSeTornarHokage(30);
-        System.out.printf("\nO %s tem %d anos de idade, então faltam %d anos para se tornar Hokage.\n", Sasuke.nome, Sasuke.idade,anosQueFaltamParaSeTornarHokage);
+        System.out.printf("\nO %s tem %d anos de idade, então faltam %d anos para se tornar Hokage.\n", Sasuke.getNome(), Sasuke.getIdade(),anosQueFaltamParaSeTornarHokage);
 
         //Criar Sakura Haruno
         Haruno Sakura = new Haruno();
-        Sakura.nome = "Sakura Haruno";
-        Sakura.aldeia = "Vila da Folha";
-        Sakura.idade = 18;
+//        Sakura.nome = "Sakura Haruno";
+//        Sakura.aldeia = "Vila da Folha";
+//        Sakura.idade = 18;
+        Sakura.setNome("Sakura Haruno");
+        Sakura.setAldeia("Vila da Folha");
+        Sasuke.setIdade(18);
         Sakura.saudacao();
         Sakura.AtivarCura();
         Sakura.atirarKunai();
 
         //Objeto 4
         Hyuuga Hinata = new Hyuuga();
-        Hinata.nome = "Hinata Hyuuga ";
-        Hinata.aldeia = "Aldeia da Folha";
-        Hinata.idade = 16;
+//        Hinata.nome = "Hinata Hyuuga ";
+//        Hinata.aldeia = "Aldeia da Folha";
+//        Hinata.idade = 16;
+        Hinata.setNome("Hinata Hyuuga");
+        Hinata.setAldeia("Aldeia da Folha");
+        Hinata.setIdade(16);
         Hinata.ativarByakugan();
 
         Boruto boruto = new Boruto();
-        boruto.nome = "Boruto Hyuuga Uzumaki";
-        boruto.idade = 16;
-        boruto.aldeia = "Konoha";
+//        boruto.nome = "Boruto Hyuuga Uzumaki";
+//        boruto.idade = 16;
+//        boruto.aldeia = "Konoha";
+        boruto.setNome("Boruto Hyuuga Uzumaki");
+        boruto.setIdade(16);
+        boruto.setAldeia("Konoha");
         boruto.ativarKarma();
         boruto.ativarJougan();
         boruto.anosParaSeTornarHokage(25);
@@ -91,9 +103,12 @@ public class Main {
 //        System.out.println(hokage4.vivo);
 
         Uzumaki ninja = new Uzumaki();
-        ninja.nome = "Boruto Uzumaki";
-        ninja.aldeia = "Konoha";
-        ninja.idade = 12;
+//        ninja.nome = "Boruto Uzumaki";
+//        ninja.aldeia = "Konoha";
+//        ninja.idade = 12;
+        ninja.setNome("Boruto Uzumaki");
+        ninja.setAldeia("Konoha");
+        ninja.setIdade(12);
         ninja.habilidadeEspecial();
         ninja.estrategiaDeBatalhaNinja();
 
@@ -105,7 +120,7 @@ public class Main {
         uchiha.SharinganAtivado();
         uchiha.habilidadeEspecial();
         int quantidadeDeAnosQueFaltaParaVirarHokage = uchiha.anosParaSeTornarHokage(40);
-        System.out.println("Faltam " + quantidadeDeAnosQueFaltaParaVirarHokage + " anos para o " + uchiha.nome + " vira Hokage.");
+        System.out.println("Faltam " + quantidadeDeAnosQueFaltaParaVirarHokage + " anos para o " + uchiha.getNome() + " vira Hokage.");
 
         Hatake hatake = new Hatake("Kakashi Hatake", "Konoha", 25);
         hatake.saudacao();

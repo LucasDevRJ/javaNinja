@@ -10,11 +10,11 @@ public class Hyuuga extends Ninja {
     }
 
     public void ativarByakugan() {
-        System.out.println("Meu nome é " + nome + ". O Byakugan Ativou, eu sou um Hyuuga!");
+        System.out.println("Meu nome é " + getNome() + ". O Byakugan Ativou, eu sou um Hyuuga!");
     }
 
     @Override
     public void saudacao() {
-        System.out.println("Olá, tudo bem? Eu sou o " + nome + " e pertenço ao clã Hyuuga.");
+        System.out.println("Olá, tudo bem? Eu sou o " + getNome() + " e pertenço ao clã Hyuuga.");
     }
 }

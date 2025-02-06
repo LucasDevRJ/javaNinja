@@ -5,13 +5,14 @@ package NivelIntermediario;
 //Boa para manutenção do código
 //Essa é uma super classe, pois dá origem a outras classes
 public abstract class Ninja implements EstrategiaDeBatalha {
-    String nome;
-    String aldeia;
-    int idade;
+    private String nome;
+    private String aldeia;
+    private int idade;
 
     //TODO: incluir dois novos atributos, número de missões concluídas e o rank
-    int numeroDeMissoesConcluidas;
-    NivelDoNinja rank;
+    private int numeroDeMissoesConcluidas;
+    private NivelDoNinja rank;
+
 //    final double altura = 1.74; //se for final não poderá atribuir outros valores nos Objetos criados
 
     public Ninja() {
@@ -35,6 +36,44 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelDoNinja rank) {
         this(nome, aldeia, idade);
         this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+        this.rank = rank;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getAldeia() {
+        return aldeia;
+    }
+
+    public void setAldeia(String aldeia) {
+        this.aldeia = aldeia;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getNumeroDeMissoesConcluidas() {
+        return numeroDeMissoesConcluidas;
+    }
+    public void setNumeroDeMissoesConcluidas(int numeroDeMissoesConcluidas) {
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+    }
+
+    public NivelDoNinja getNivelDoNinja() {
+        return rank;
+    }
+
+    public void setNivelDoNinja(NivelDoNinja rank) {
         this.rank = rank;
     }
 

@@ -17,22 +17,22 @@ public class Uchiha extends Ninja implements SharinganInterface {
     //sobreescritura do método da classe Ninja
     @Override
     public void saudacao() {
-        System.out.println("Olá, tudo bem? Eu sou o " + nome + " e pertenço ao clã Uchiha.");
+        System.out.println("Olá, tudo bem? Eu sou o " + getNome() + " e pertenço ao clã Uchiha.");
     }
 
     @Override
     public void habilidadeEspecial() {
-        System.out.println("Meu nome é " + nome + " e esse é meu ataque Uchiha, um ataque de fogo");
+        System.out.println("Meu nome é " + getNome() + " e esse é meu ataque Uchiha, um ataque de fogo");
     }
 
     @Override
     public void SharinganAtivado() {
-        System.out.println("Meu nome é " + nome + ". O Sharingan Ativou, eu sou um Uchiha!");
+        System.out.println("Meu nome é " + getNome() + ". O Sharingan Ativou, eu sou um Uchiha!");
     }
 
     @Override
     public void inteligenciaDeCombate() {
-        System.out.println("Meu nome é " + nome + " e essa é minha inteligência de combate ninja.");
+        System.out.println("Meu nome é " + getNome() + " e essa é minha inteligência de combate ninja.");
     }
     @Override
     public void inteligenciaDeCombate(int qi) {
