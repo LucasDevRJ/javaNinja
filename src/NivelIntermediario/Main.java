@@ -247,7 +247,17 @@ public class Main {
         //ver tamanho da lista
         System.out.println("Tamanho da lista = " + ninjasLista.size());
 
-        System.out.println(ninjasLista.get(9));
+//        System.out.println(ninjasLista.get(9));
 
+        System.out.println("--------------------|KUNAIS|--------------------");
+        EquipamentosDeNinja kunai = new EquipamentosDeNinja("Kunai");
+        EquipamentosDeNinja shuriken = new EquipamentosDeNinja("Shuriken");
+        EquipamentosDeNinja pergaminho = new EquipamentosDeNinja("Pergaminho");
+
+        BolsaGenerica<EquipamentosDeNinja> bolsa = new BolsaGenerica<>();
+        bolsa.adicionaEquipamento(kunai);
+        bolsa.adicionaEquipamento(shuriken);
+        bolsa.adicionaEquipamento(pergaminho);
+        System.out.println(bolsa);
     }
 }
