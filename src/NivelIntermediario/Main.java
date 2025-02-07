@@ -1,5 +1,8 @@
 package NivelIntermediario;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         //Criar o ninja Naruto - Naruto é um Objeto
@@ -197,5 +200,54 @@ public class Main {
         System.out.println("--------------------|Naruto Final Classe|--------------------");
         Naruto naruto = new Naruto();
         naruto.apresentacao();
+
+        System.out.println();
+        System.out.println("--------------------|Array|--------------------");
+        //Arrays são estáticos, por isso não alteram de tamanho
+        String[] ninjasArray = new String[3];
+        ninjasArray[0] = "Shikamaru";
+        ninjasArray[1] = "Kiba";
+        ninjasArray[2] = "Choouji";
+
+        System.out.println("Referência de memória = " + ninjasArray);
+
+        System.out.println("Ninjas do Array:");
+        for (int i = 0; i < ninjasArray.length; i++) {
+            System.out.println(ninjasArray[i]);
+        }
+
+        System.out.println("--------------------|Listas|--------------------");
+        //Listas não são estáticas, elas podem aumentar e diminuir de tamanho
+        List<String> ninjasLista = new ArrayList<>();
+        ninjasLista.add("Uchiha Shisui"); //adicionando ninja
+        ninjasLista.add("Uchiha Itachi");
+        ninjasLista.add("Uchiha Sasuke");
+
+        System.out.println("Valores da lista = " + ninjasLista);
+
+        ninjasLista.add("Inuzuka Kiba");
+        ninjasLista.add("Hinata Hyuuga");
+
+        System.out.println("Valores da lista = " + ninjasLista);
+
+        ninjasLista.remove("Inuzuka Kiba"); //removendo
+
+        System.out.println("Valores da lista = " + ninjasLista);
+
+        ninjasLista.add("Son Goku");
+
+        System.out.println("Valores da lista = " + ninjasLista);
+
+
+        //editando elemento
+        ninjasLista.set(4, "Naruto");
+
+        System.out.println("Valores da lista = " + ninjasLista);
+
+        //ver tamanho da lista
+        System.out.println("Tamanho da lista = " + ninjasLista.size());
+
+        System.out.println(ninjasLista.get(9));
+
     }
 }
