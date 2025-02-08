@@ -287,5 +287,11 @@ public class Main {
         bolsaNinja.adicionaEquipamentoNinja(kunai1);
         bolsaNinja.adicionaEquipamentoNinja(shuriken1);
         bolsaNinja.adicionaEquipamentoNinja(new Shuriken("Shuriken de Fogo"));
+
+        System.out.println("--------------------|NINJA RECORD|--------------------");
+        NinjaRecord ninjaRecord = new NinjaRecord("Rock Lee", "rocklee@hotmail.com", "(11)11111111");
+        System.out.println(ninjaRecord);
+        System.out.println(ninjaRecord.emailEmCaixaAlta());
+        System.out.println("Nome: " + ninjaRecord.nome());
     }
 }
