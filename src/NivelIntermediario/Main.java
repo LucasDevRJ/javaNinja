@@ -2,6 +2,7 @@ package NivelIntermediario;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -249,15 +250,42 @@ public class Main {
 
 //        System.out.println(ninjasLista.get(9));
 
-        System.out.println("--------------------|KUNAIS|--------------------");
+        System.out.println("--------------------|BOLSA NINJA|--------------------");
         EquipamentosDeNinja kunai = new EquipamentosDeNinja("Kunai");
         EquipamentosDeNinja shuriken = new EquipamentosDeNinja("Shuriken");
         EquipamentosDeNinja pergaminho = new EquipamentosDeNinja("Pergaminho");
+        EquipamentosDeNinja bomba = new EquipamentosDeNinja("Bomba de Fumaça");
 
         BolsaGenerica<EquipamentosDeNinja> bolsa = new BolsaGenerica<>();
         bolsa.adicionaEquipamento(kunai);
         bolsa.adicionaEquipamento(shuriken);
         bolsa.adicionaEquipamento(pergaminho);
-        System.out.println(bolsa);
+        bolsa.adicionaEquipamento(bomba);
+        bolsa.exibirEquipamentosDaBolsa();
+        System.out.println();
+
+        System.out.println("--------------------|LISTA DE NINJAS|--------------------");
+        List<Ninja> listaDeNinjas = new ArrayList<>();
+        listaDeNinjas.add(uzumaki1);
+        listaDeNinjas.add(Sasuke);
+        listaDeNinjas.add(Hinata);
+
+        System.out.println("Lista de Ninjas = " + listaDeNinjas);
+
+        System.out.println("--------------------|BOLSA DE NINJAS|--------------------");
+        /*
+            O Object permite a utilização de qualquer classe
+            E como pode ver, a lista bolsaNinja cabe literalmente qualquer classe dentro dela
+         */
+        Kunai kunai1 = new Kunai();
+        kunai1.setNome("Kunai de Sombra");
+
+        Shuriken shuriken1 = new Shuriken();
+        shuriken1.setNome("Shuriken de Sombra");
+
+        BolsaNinja<Object> bolsaNinja = new BolsaNinja<>();
+        bolsaNinja.adicionaEquipamentoNinja(kunai1);
+        bolsaNinja.adicionaEquipamentoNinja(shuriken1);
+        bolsaNinja.adicionaEquipamentoNinja(new Shuriken("Shuriken de Fogo"));
     }
 }

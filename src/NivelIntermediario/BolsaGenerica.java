@@ -17,6 +17,13 @@ public class BolsaGenerica<T> {
         this.equipamentos.add(equipamento);
     }
 
+    public void exibirEquipamentosDaBolsa() {
+        System.out.print("Na bolsa do Ninja tem: ");
+        for (int i = 0; i < this.getEquipamentos().size(); i++) {
+            System.out.printf("%s, ", this.getEquipamentos().get(i).toString());
+        }
+    }
+
     public List<T> getEquipamentos() {
         return equipamentos;
     }
