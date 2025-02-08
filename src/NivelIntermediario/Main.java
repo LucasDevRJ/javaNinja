@@ -3,6 +3,7 @@ package NivelIntermediario;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -251,6 +252,7 @@ public class Main {
 //        System.out.println(ninjasLista.get(9));
 
         System.out.println("--------------------|BOLSA NINJA|--------------------");
+        //Adição de uma forma inteligente para colocar equipamentos genericos como kunai, shuriken e etc em uma única lista
         EquipamentosDeNinja kunai = new EquipamentosDeNinja("Kunai");
         EquipamentosDeNinja shuriken = new EquipamentosDeNinja("Shuriken");
         EquipamentosDeNinja pergaminho = new EquipamentosDeNinja("Pergaminho");
@@ -265,6 +267,8 @@ public class Main {
         System.out.println();
 
         System.out.println("--------------------|LISTA DE NINJAS|--------------------");
+        //Listas são dinâmicas
+        //Tamanho aumenta e diminui confome necessidade
         List<Ninja> listaDeNinjas = new ArrayList<>();
         listaDeNinjas.add(uzumaki1);
         listaDeNinjas.add(Sasuke);
@@ -293,5 +297,28 @@ public class Main {
         System.out.println(ninjaRecord);
         System.out.println(ninjaRecord.emailEmCaixaAlta());
         System.out.println("Nome: " + ninjaRecord.nome());
+
+        System.out.println("--------------------|STACK|--------------------");
+        //Ultimo elemento que entrou será o primeiro a sair
+        Stack<String> ninjaStack = new Stack<>();
+        //Adicionando Ninjas
+        ninjaStack.push("Naruto Uzumaki");
+        ninjaStack.push("Sasuke Uchiha");
+        ninjaStack.push("Sakura Haruno");
+        ninjaStack.push("Kakashi Hatake");
+        System.out.println("Stack atual = " + ninjaStack);
+        //Removendo ninja
+        ninjaStack.pop(); //kakashi excluído
+        System.out.println("Stack atual = " + ninjaStack);
+        System.out.println();
+        //Será exibida a Sakura porque ele foi a última a entrar
+        System.out.println("Próximo elemento do topo da lista = " + ninjaStack.peek()); //Sakura
+        ninjaStack.push("Obito Uchiha"); //Novo último adicionado
+        System.out.println("Próximo elemento do topo da lista = " + ninjaStack.peek()); //Obito
+        System.out.println("Tamanho da Stack = " + ninjaStack.size());
+        ninjaStack.pop(); //removendo Obito
+        System.out.println("Stack atual = " + ninjaStack);
+        System.out.println("Próximo elemento do topo da lista = " + ninjaStack.peek()); //Sakura
+
     }
 }
