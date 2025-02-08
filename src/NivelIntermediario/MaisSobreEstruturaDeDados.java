@@ -1,8 +1,6 @@
 package NivelIntermediario;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class MaisSobreEstruturaDeDados {
     public static void main(String[] args) {
@@ -10,6 +8,8 @@ public class MaisSobreEstruturaDeDados {
         /*
             São mais usados quando sabemos qual tamanho queremos
             Em situações mais simples
+            Temos que passar o número total de alocação de memória
+            Caso seja passado um número maior do que realmente foi usado, o espaço será criado, porém com valor nulo
          */
         //Array é estático, então não podem aumentar ou diminuir de tamanho
         //Temos que definir o tamanho dele(4)
@@ -44,10 +44,11 @@ public class MaisSobreEstruturaDeDados {
         System.out.println("--------------------|LIST|--------------------");
         /*
             A List pode ser generica, caso nenhum dado seja passado
-            Consegue importar várias funções do Java
+            Consegue importar várias funções das Collections
             Pode aumentar e diminuir de tamanho de acordo a demanda
             São mais lentas em comparação com Array
             Uma das mais usadas na programação
+            O primeiro a entrar e o último a sair (FILO)
          */
         List<String> listNinja = new ArrayList<>();
         listNinja.add("Shino Aburame");
@@ -88,5 +89,45 @@ public class MaisSobreEstruturaDeDados {
         System.out.println("Adicionando o " + stackNinja.push("Guy")); //vai virar o último, ou primeiro se vista da direita para esquerda
         System.out.println("Stack após adição = " + stackNinja);
         System.out.println("Primeiro ninja da lista = " + stackNinja.peek()); //exibe o Guy, porque foi o último a ser adicionado
+
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        System.out.println("--------------------|Queue|--------------------");
+        /*
+            Primeiro elemento que entrar será o primeiro a sair (FIFO). Como em uma fila.
+            Head é o primeiro elemento da fila. Já o Tail é o último da fila.
+            São basicamente como as Stacks, só que ao inverso.
+         */
+        Queue<String> queueNinja = new LinkedList<>();
+        queueNinja.add("Naruto");
+        queueNinja.add("Sasuke");
+        queueNinja.add("Sakura");
+        queueNinja.add("Kakshi");
+        queueNinja.add("Shikamaru");
+
+        //Exibir os ninjas do Queue
+        System.out.println("Queue de Ninjas = " + queueNinja);
+
+        //Tirar o Head da fila
+        System.out.println("Removendo o Head da fila = " + queueNinja.poll());
+        System.out.println("Queue de Ninjas após a remoção = " + queueNinja);
+
+        System.out.println("Exibindo o primeiro da lista Queue = " + queueNinja.peek());
+
+        queueNinja.add("Hashirama");
+        queueNinja.add("Tobirama");
+
+        System.out.println("Queue de Ninjas após as duas inserções = " + queueNinja);
+
+        System.out.println("A fila Queue de Ninjas esta vázia = " + queueNinja.isEmpty());
+
+        for (int i = 0; i <= queueNinja.size(); i++) {
+            queueNinja.poll();
+        }
+        queueNinja.poll();
+        queueNinja.poll();
+        System.out.println("Queue de Ninjas = " + queueNinja);
+
+        System.out.println("A fila Queue de Ninjas esta vázia = " + queueNinja.isEmpty());
     }
 }
