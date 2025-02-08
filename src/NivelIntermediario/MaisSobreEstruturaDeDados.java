@@ -129,5 +129,46 @@ public class MaisSobreEstruturaDeDados {
         System.out.println("Queue de Ninjas = " + queueNinja);
 
         System.out.println("A fila Queue de Ninjas esta vázia = " + queueNinja.isEmpty());
+
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        System.out.println("--------------------|LinkedList|--------------------");
+        /*
+            Ao invés de utilizar índices para percorrer os elementos, possui ponteiros
+            que apontam para o próximo elemento da lista
+            Ótimo para percorrer elementos, pois não precisa ficar mudando as posições dos elementos
+            Tem menos processamento de computação, pois tem as referências
+         */
+        LinkedList<String> linkedListNinja = new LinkedList<>();
+        linkedListNinja.add("Madara Uchiha");
+        linkedListNinja.add("Kagami Uchiha");
+        linkedListNinja.add("Izuna Uchiha");
+        linkedListNinja.add("Fugaku Uchiha");
+        linkedListNinja.add("Baru Uchiha");
+        linkedListNinja.add("Tajima Uchiha");
+
+        System.out.println("Exibindo os ninjas da LinkedList = " + linkedListNinja);
+
+        linkedListNinja.add(2, "Hikaku Uchiha");
+        System.out.println("Adicionando o Hikaku Uchiha no segundo índice.");
+
+        System.out.println("Exibindo os ninjas da LinkedList = " + linkedListNinja);
+
+        System.out.println("Adicionando o Tajima Uchiha no quinto indice.");
+        linkedListNinja.add(5, "Tajima Uchiha");
+        System.out.println("Exibindo os ninjas da LinkedList = " + linkedListNinja);
+
+        System.out.println("Removendo Baru Uchiha(sexto índice)");
+        linkedListNinja.remove(6);
+        System.out.println("Exibindo os ninjas da LinkedList = " + linkedListNinja);
+
+        /*
+            Tanto a ArrayList e LinkeList são Collections
+            Collections são interfaces implementadas pelas estruturas de dados do Java
+            As estruturas de dados que implementam Collections = List, Queue e Set
+            Os ArrayList, LinkedList e Stack são classes que implementam a List, a qual implementa a Collections
+            A Queue é uma interface que implementa a Collections e a PriorityQueue implementa a Queue
+         */
+
     }
 }
