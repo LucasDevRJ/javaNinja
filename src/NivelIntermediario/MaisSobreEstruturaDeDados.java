@@ -170,5 +170,26 @@ public class MaisSobreEstruturaDeDados {
             A Queue é uma interface que implementa a Collections e a PriorityQueue implementa a Queue
          */
 
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        System.out.println("--------------------|HashSet|--------------------");
+
+        /*
+            A grande vantagem do HashSet em relação a Listas é que ele ignora itens duplicados dentro da lista
+            Ele não usa índices, então não temos ordenação
+         */
+        Set<String> hashNinjas = new HashSet<>();
+        hashNinjas.add("Naruto Uzumaki");
+        hashNinjas.add("Sakura Haruno");
+        hashNinjas.add("Sasuke Uchiha");
+        hashNinjas.add("Kakashi Hatake");
+        hashNinjas.add("Naruto Uzumaki"); //não será adicionado
+
+        System.out.println("HashSet dos Ninjas = " + hashNinjas);
+
+        hashNinjas.remove("Sakura Haruno"); //para remover
+
+        System.out.println("HashSet dos Ninjas após remoção = " + hashNinjas);
+
     }
 }
