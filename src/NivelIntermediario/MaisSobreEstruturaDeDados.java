@@ -191,5 +191,35 @@ public class MaisSobreEstruturaDeDados {
 
         System.out.println("HashSet dos Ninjas após remoção = " + hashNinjas);
 
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        System.out.println("--------------------|TreeSet|--------------------");
+        /*
+            Utilizado quando queremos colocar a lista em ordem alfabética/decrescente
+            Ele também faz o mesmo que o HashSet: nada de duplicações e indices
+         */
+        Set<String> treeSetNinjas = new TreeSet<>();
+        treeSetNinjas.add("Uchiha Obito");
+        treeSetNinjas.add("Uchiha Itachi");
+        treeSetNinjas.add("Uchiha Sasuke");
+        treeSetNinjas.add("Uchiha Madara");
+
+
+        System.out.println("TreeSet dos Ninjas = " + treeSetNinjas);
+
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        System.out.println("--------------------|LinkedHashSet|--------------------");
+        /*
+            Faz o mesmo que o HashSet, mas ordena pela ordem de implementação
+         */
+        Set<String> linkedHashSetNinjas = new LinkedHashSet<>();
+        linkedHashSetNinjas.add("Sakura");
+        linkedHashSetNinjas.add("Ino");
+        linkedHashSetNinjas.add("Tenten");
+        linkedHashSetNinjas.add("Hinata");
+
+        System.out.println("LinkedHashSet dos Ninjas = " + linkedHashSetNinjas);
+
     }
 }
